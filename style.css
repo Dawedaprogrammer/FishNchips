@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(wallpaperflare.com_wallpaper.jpg);
+  height: 100vh;
+}
+
+img {
+  width: 300px;
+}
+
+.click {
+  cursor: pointer;
+  text-anchor: middle;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.click:active {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1.05);
+}
+
+.lår {
+  font-size: 30px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+.scores {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+button {
+  background-color: rgb(46, 228, 0);
+  border: none;
+  color: rgb(37, 37, 37);
+  padding: 5px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-family: sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+.knapp {
+  display: grid;
+  justify-content: center;
+  padding: 2%;
+}
+
+.räk_score,
+.fisk_score,
+.haj_score,
+.val_score,
+.score,
+p {
+  padding: 0.5%;
+  border: solid cornflowerblue;
+  border-radius: 13px;
+  display: flex;
+  background-color: #e3e3e3;
+}
+
+.fiisk {
+  width: 130px;
+  height: 135px;
+}
+
+.fish {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#firre {
+  margin-left: 10px;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0 0 0);
+  transition: 1s;
+  display: none;
+}
+
+.lampor {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  opacity: 0;
+}
+
+p {
+  font-size: 30px;
+  position: absolute;
+
+  top: 80%;
+  left: 80%;
+}
+.fishAndChips {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 45%);
+  transition: 1s;
+  opacity: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
